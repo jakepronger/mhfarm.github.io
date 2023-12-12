@@ -4007,11 +4007,11 @@ footer {
 }
 
 :root {
-  --clr-0: #f31f41; /*__footer*/
-  --clr-1: #f82f4e; /*__color 1*/
-  --clr-2: #d6e49d; /*__background*/
-  --clr-3: #849855; /*__color 3*/
-  --clr-4: #464c35; /*__color 4*/
+  --clr-0: #f3941f; /*__footer*/
+  --clr-1: #f8bf2f; /*__color 1*/
+  --clr-2: #2b2b2b; /*__background*/
+  --clr-3: #c3aa2f; /*__color 3*/
+  --clr-4: #2b2b2b; /*__color 4*/
   --clr-5: #000; /*__color 5*/
   --clr-6: #849855; /*__color 6*/
   --clr-7: #849855; /*__color 7*/
@@ -36597,7 +36597,9 @@ src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/bungeehairline/
   font-family: secondfont;
   text-transform: uppercase;
   letter-spacing: 10px;
-  color:#fff
+  color:#fff;
+  margin: -104px 0 0;
+  text-align: right;
 }
 
 .u-section-1 .u-text-3,.u-section-1 .u-text-3x,.u-section-1 .u-text-3y {
@@ -36607,7 +36609,7 @@ src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/bungeehairline/
   margin: 18px 15px 0;
   letter-spacing: 2px;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #e1d9b3;
+  -webkit-text-stroke-color: #000;
 }
 
 .u-section-1 .u-text-4 {
@@ -36656,6 +36658,11 @@ src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/bungeehairline/
 }
 
 .u-section-1 .u-repeater-3 {
+  grid-template-columns: repeat(3, 33.33333333336%);
+  grid-gap: 0px 0px;
+  grid-auto-columns: 33.33333333336%;
+}
+.u-section-1 .u-repeater-32 {
   grid-template-columns: repeat(2, 33.33333333336%);
   grid-gap: 0px 0px;
   grid-auto-columns: 33.33333333336%;
@@ -36757,6 +36764,15 @@ border-radius: .8vw;
     padding-left: 0;
     padding-right: 0;
   }
+  .u-section-1 .u-text-2 {
+    font-size: 4.375rem;
+    font-family: secondfont;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color:#fff;
+    margin: -104px 0 0;
+    text-align: right;
+  }
 }
 @media (max-width: 991px) {
   .u-section-1 .u-text-1,.u-section-1 .u-text-1x {
@@ -36788,6 +36804,15 @@ border-radius: .8vw;
     line-height: 1.2;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .u-section-1 .u-text-2 {
+    font-size: 4.375rem;
+    font-family: secondfont;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color:#fff;
+    margin: 0 0 0;
+    text-align: left;
   }
 }
 @media (max-width: 767px) {
@@ -36856,7 +36881,7 @@ border-radius: .8vw;
     font-size: 2rem;
   }
 
-  .u-section-1 .u-repeater-1, .u-section-1 .u-repeater-3 {
+  .u-section-1 .u-repeater-1, .u-section-1 .u-repeater-32, .u-section-1 .u-repeater-3 {
     grid-template-columns: 100%;
     grid-gap: 0px 0px;
     grid-auto-columns: 100%;
