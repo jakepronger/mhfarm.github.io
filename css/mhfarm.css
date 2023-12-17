@@ -36592,7 +36592,7 @@ src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/bungeehairline/
   margin: 171px auto 0;
 }
 
-.u-section-1 .u-text-2 {
+.u-section-1 .u-text-2, .u-section-1 .u-text-2- {
   font-size: 4.375rem;
   font-family: secondfont;
   text-transform: uppercase;
@@ -36773,6 +36773,15 @@ border-radius: .8vw;
     margin: -104px 0 0;
     text-align: right;
   }
+  .u-section-1 .u-text-2- {
+    font-size: 4.375rem;
+    font-family: secondfont;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color:#fff;
+    margin: 0 0 0;
+    text-align: left;
+  }
 }
 @media (max-width: 991px) {
   .u-section-1 .u-text-1,.u-section-1 .u-text-1x {
@@ -36805,7 +36814,7 @@ border-radius: .8vw;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .u-section-1 .u-text-2 {
+  .u-section-1 .u-text-2, .u-section-1 .u-text-2- {
     font-size: 4.375rem;
     font-family: secondfont;
     text-transform: uppercase;
@@ -36821,7 +36830,7 @@ border-radius: .8vw;
     width: 450px;
   }
 
-  .u-section-1 .u-text-2 {
+  .u-section-1 .u-text-2, .u-section-1 .u-text-2- {
     font-size: 3.5625rem;
   }
 
@@ -36877,7 +36886,7 @@ border-radius: .8vw;
     width: 290px;
   }
 
-  .u-section-1 .u-text-2 {
+  .u-section-1 .u-text-2, .u-section-1 .u-text-2- {
     font-size: 2rem;
   }
 
