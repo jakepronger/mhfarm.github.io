@@ -36035,7 +36035,7 @@ a.u-link.u-text-hover-grey-90:hover {
         a.u-button-style.u-text-custom-color-5,
         a.u-button-style.u-text-custom-color-5[class*="u-border-"]
         {
-            color: #9fa1a3 !important;
+            color: var(--clr-5) !important;
         }
 
         a.u-button-style.u-text-custom-color-5:hover,
