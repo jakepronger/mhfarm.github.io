@@ -4001,18 +4001,18 @@ body {
 }
 footer {
   margin-top: auto;
-  height: 94px;
+  height: 40px;
   bottom: 0;
-  line-height: 47px;
+  border-top: 1px solid var(--clr-4);
 }
 
 :root {
-  --clr-0: #f3941f; /*__footer*/
-  --clr-1: #f8bf2f; /*__color 1*/
-  --clr-2: #2b2b2b; /*__background*/
-  --clr-3: #c3aa2f; /*__color 3*/
-  --clr-4: #2b2b2b; /*__color 4*/
-  --clr-5: #000; /*__color 5*/
+  --clr-0: #fff; /*__footer*/
+  --clr-1: #1b1b1b; /*__color 1*/
+  --clr-2: #fff; /*__background*/
+  --clr-3: #FA8072; /*__color 3*/
+  --clr-4: #696969; /*__color 4*/
+  --clr-5: #98FB98; /*__color 5*/
   --clr-6: #f6aa27; /*__color 6  1&2 mixed*/
   --clr-7: #849855; /*__color 7*/
   --clr-8: #849855; /*__color 8*/
@@ -15534,6 +15534,7 @@ section.u-image,
   position: fixed;
   z-index: 100000;
   display: none;
+  fill:var(--clr-5)
 }
 .u-post-details {
   display: flex;
@@ -21184,7 +21185,7 @@ a.u-link.u-hover-color-1-dark-1:hover {
 .u-container-layout.u-color-1:before,
 .u-table-alt-color-1 tr:nth-child(even) {
   color: #555555;
-  background-color: #000;
+  background-color: var(--clr-1);
 }
 .u-button-style.u-color-1,
 .u-button-style.u-color-1[class*="u-border-"] {
@@ -35330,7 +35331,7 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-container-layout.u-custom-color-1:before,
         .u-table-alt-custom-color-1 tr:nth-child(even)
         {
-            color: var(--clr-5);
+            color: var(--clr-1);
             background-color: var(--clr-0); /* _header/footer */
         }
 
@@ -35902,7 +35903,7 @@ a.u-link.u-text-hover-grey-90:hover {
         a.u-button-style.u-text-custom-color-1,
         a.u-button-style.u-text-custom-color-1[class*="u-border-"]
         {
-            color: var(--clr-0) !important;
+            color: var(--clr-4) !important;
         }
 
         a.u-button-style.u-text-custom-color-1:hover,
@@ -35965,7 +35966,7 @@ a.u-link.u-text-hover-grey-90:hover {
         a.u-button-style.u-text-custom-color-2,
         a.u-button-style.u-text-custom-color-2[class*="u-border-"]
         {
-            color: var(--clr-1) !important;
+            color: var(--clr-4) !important;
         }
 
         a.u-button-style.u-text-custom-color-2:hover,
@@ -36023,9 +36024,21 @@ a.u-link.u-text-hover-grey-90:hover {
             color: #1b1b1b !important;
         }
 
+        a.u-button-style.u-text-logo {
+          color: var(--clr-4)
+        }
+        a.u-button-style.u-text-logo:hover {
+          color: var(--clr-3)
+        }
+
         .u-text-custom-color-3,
         a.u-button-style.u-text-custom-color-3,
         a.u-button-style.u-text-custom-color-3[class*="u-border-"]
+        {
+            color: var(--clr-3) !important;
+        }
+
+        .u-text-hover-custom-color-3:hover
         {
             color: var(--clr-3) !important;
         }
@@ -36520,20 +36533,21 @@ a.u-link.u-text-hover-grey-90:hover {
 /*end-variables sitestylecss*/
  .u-header {
   background-image: none;
+  border-bottom: 1px solid var(--clr-4);
 }
 
 .u-header .u-menu-1 {
-  margin: 27px 0 0 auto;
+  margin: 20px 0 0 auto;
 }
 
 .u-header .u-menu-2 {
-  margin: -54px auto 27px 0;
+  margin: -40px auto 20px 0;
   font-family: mainfont;
 }
 
 .u-header .u-nav-1 {
   font-size: 1rem;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   background-image: none;
   font-family: thirdfont;
   text-transform: uppercase;
@@ -36554,7 +36568,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-sheet-1 {
-  min-height: 94px;
+  min-height: 40px;
 }
 
 /*__MAIN CSS__*/
@@ -36571,12 +36585,12 @@ src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/bungee/Bungee-R
 
 @font-face {
 font-family: thirdfont;
-src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/bungee/Bungee-Regular.ttf);
+src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/suse/SUSE[wght].ttf);
 }
 
 @font-face {
 font-family: forthfont;
-src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/bungeehairline/BungeeHairline-Regular.ttf);
+src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/suse/SUSE[wght].ttf);
 }
 
 
@@ -36600,6 +36614,8 @@ src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/bungeehairline/
   color:#fff;
   margin: -104px 0 0;
   text-align: right;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--clr-1);
 }
 
 .u-section-1 .u-text-3,.u-section-1 .u-text-3x,.u-section-1 .u-text-3y {
@@ -36608,8 +36624,6 @@ src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/bungeehairline/
   font-family: thirdfont;
   margin: 18px 15px 0;
   letter-spacing: 2px;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #000;
 }
 
 .u-section-1 .u-text-4 {
@@ -36618,15 +36632,13 @@ src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/bungeehairline/
   font-family: forthfont;
   margin: 18px 15px 0;
   letter-spacing: 2px;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #000;
 }
 
 .u-section-1 .u-icon-1 {
   height: 70px;
   width: 70px;
-  background-color: black;
-  color: var(--clr-3) !important;
+  background-color: var(--clr-1);
+  color: var(--clr-5) !important;
   margin: 0 auto;
   padding:15px;
 }
@@ -36680,6 +36692,16 @@ src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/bungeehairline/
   text-align: center;
 }
 
+.u-section-1 .u-btn-5 {
+  border-style: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin: 10px auto 0;
+  text-align: center;
+}
+
 .u-section-1 .u-container-layout-1 {
   padding: 30px 1px;
 }
@@ -36724,29 +36746,6 @@ src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/bungeehairline/
   border: var(--arrow-size) solid transparent;
   border-top-color: var(--tooltip-color);
   transform-origin: top center;
-}
-
-.popup {
-  background-color: var(--clr-3);
-  width: 100%;
-  padding: 10px 40px;
-  right: 50%;
-  bottom: 50%;
-  transform: translate(50%, 50%);
-  position: absolute;
-border-radius: .8vw;
-  display: none;
-  text-align: center;
-  z-index: 1;
-}
-
-.popup button {
-  display: block;
-  margin: 0 0 20px auto;
-  background-color: transparent;
-  color: var(--clr-4);
-  border: none;
-  cursor: pointer;
 }
 .xxx{
   display: none;
@@ -36873,6 +36872,9 @@ border-radius: .8vw;
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .u-section-1 .u-btn-5 {
+    font-size: 0.8rem;
+  }
 }
 @media (max-width: 575px) {
   .u-footer .u-text-1 {
@@ -36930,8 +36932,8 @@ border-radius: .8vw;
   background: transparent; 
 }
 
-::-moz-selection {color: var(--clr-4);background: var(--clr-6);}
-::selection {color: var(--clr-4);background: var(--clr-6);}
+::-moz-selection {color: var(--clr-4);background: var(--clr-3);}
+::selection {color: var(--clr-4);background: var(--clr-3);}
 
 @font-face {
 .madeby::before,
